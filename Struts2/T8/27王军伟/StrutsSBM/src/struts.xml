@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<!-- 启用自动动态方法的调用 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<!-- 设置文件文件上传大小 -->
+	<constant name="struts.multipart.maxSize" value="102400000" />
+	<package name="user" namespace="/" strict-method-invocation="false"
+		extends="struts-default">
+		<global-results>
+			<result name="exception">/jsp/error.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception"
+				result="exception" />
+		</global-exception-mappings>
+		<action name="*_user" class="com.qhit.lh.gr3.wjw.sbm.user.action.ActionUser"
+			method="{1}">
+			<result name="loginSuccess" type="redirectAction">getAll_user</result>
+			<result name="listUser">/jsp/userAdmin.jsp</result>
+			<result name="uploadPfotoSuccess" type="chain">add_user</result>
+			<result name="addFile">/jsp/userAdd.jsp</result>
+			<result name="addSuccess" type="redirectAction">getAll_user</result>
+		</action>
+	</package>
+</struts>
