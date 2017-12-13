@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-12-12 23:25:16 by Hibernate Tools 5.2.6.Final -->
+<hibernate-mapping>
+ <class catalog="db_user" name="com.qhit.lh.gr3.wjw.user.bean.TInfo"
+  schema="dbo" table="t_info">
+  <id column="id" name="id" type="tegerin">
+   <generator class="sequence"/>
+  </id>
+  <property generated="never" lazy="false" name="sex" type="string">
+   <column name="sex"/>
+  </property>
+  <property generated="never" lazy="false" name="age" type="java.lang.Integer">
+   <column name="age"/>
+  </property>
+  <one-to-one cascade="all" class="com.qhit.lh.gr3.wjw.user.bean.TUser" name="tuser"/>
+ </class>
+</hibernate-mapping>
