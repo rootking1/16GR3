@@ -3,7 +3,7 @@ package com.qhit.cyh;
 import com.opensymphony.xwork2.Action;
 
 public class HelloWorld implements Action {
-	private String name="我是陈益辉";
+	private String name="我是aaa";
 	@Override
 	public String execute() throws Exception {
 		// TODO Auto-generated method stub
