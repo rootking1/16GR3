@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-3-8 11:27:08 by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="db_exam" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.qhit.lh.wjw.bean.PaperWquestion" optimistic-lock="version" polymorphism="implicit" schema="dbo" select-before-update="false" table="paper_wquestion">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="pid" optimistic-lock="true" type="int" unique="false">
+            <column name="pId" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="qid" optimistic-lock="true" type="int" unique="false">
+            <column name="qId" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

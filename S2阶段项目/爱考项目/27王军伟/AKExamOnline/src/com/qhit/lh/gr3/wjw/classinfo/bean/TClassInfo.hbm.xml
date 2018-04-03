@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-3-8 11:27:08 by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="db_exam" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.qhit.lh.wjw.bean.TClassInfo" optimistic-lock="version" polymorphism="implicit" schema="dbo" select-before-update="false" table="t_classInfo">
+        <id name="ccode" type="string">
+            <column length="20" name="cCode"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="cname" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="cName" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="major" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="major" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="insId" optimistic-lock="true" type="serializable" unique="false">
+            <column name="insId"/>
+        </property>
+        <property generated="never" lazy="false" name="iecId" optimistic-lock="true" type="serializable" unique="false">
+            <column name="iecId"/>
+        </property>
+        <property generated="never" lazy="false" name="cdate" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="cDate" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="g1num" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="g1Num"/>
+        </property>
+        <property generated="never" lazy="false" name="g2num" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="g2Num"/>
+        </property>
+        <property generated="never" lazy="false" name="g3num" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="g3Num"/>
+        </property>
+        <property generated="never" lazy="false" name="ccodeId" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="cCodeId"/>
+        </property>
+        <property generated="never" lazy="false" name="cremark" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="cRemark"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="user" namespace="/" extends="default"
+		strict-method-invocation="false">
+		<action name="user_*"
+			class="com.qhit.lh.gr3.wjw.common.action.LoginAction" method="{1}">
+			<result name="loginSuccess">/jsp/home.jsp</result>
+			<result name="logout">/index.jsp</result>
+		</action>
+	</package>
+</struts>

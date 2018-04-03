@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-3-8 17:31:36 by Hibernate Tools 5.2.9.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="db_exam" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.qhit.lh.gr3.wjw.account.bean.User" optimistic-lock="version" polymorphism="implicit" schema="dbo" select-before-update="false" table="t_user">
+        <id name="name" type="string">
+            <column length="20" name="name"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="pwd" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="pwd" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="role" optimistic-lock="true" type="int" unique="false">
+            <column name="role" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-3-8 11:27:08 by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="db_exam" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.qhit.lh.wjw.bean.TTeacher" optimistic-lock="version" polymorphism="implicit" schema="dbo" select-before-update="false" table="t_teacher">
+        <id name="tid" type="string">
+            <column length="20" name="tid"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="tname" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="tname" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="sex" optimistic-lock="true" type="string" unique="false">
+            <column length="2" name="sex" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="birthday" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="birthday"/>
+        </property>
+        <property generated="never" lazy="false" name="education" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="education"/>
+        </property>
+        <property generated="never" lazy="false" name="tel" optimistic-lock="true" type="string" unique="false">
+            <column length="11" name="tel"/>
+        </property>
+        <property generated="never" lazy="false" name="post" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="post" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="remarks" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="remarks"/>
+        </property>
+    </class>
+</hibernate-mapping>

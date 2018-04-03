@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-3-8 11:27:08 by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="db_exam" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.qhit.lh.wjw.bean.TStudent" optimistic-lock="version" polymorphism="implicit" schema="dbo" select-before-update="false" table="t_student">
+        <id name="sid" type="string">
+            <column length="20" name="sid"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="sname" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="sname" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="sex" optimistic-lock="true" type="string" unique="false">
+            <column length="2" name="sex" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="enterSchool" optimistic-lock="true" type="string" unique="false">
+            <column length="4" name="enterSchool" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="ccode" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="cCode" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="photo" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="photo"/>
+        </property>
+        <property generated="never" lazy="false" name="birthday" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="birthday"/>
+        </property>
+        <property generated="never" lazy="false" name="idcard" optimistic-lock="true" type="string" unique="false">
+            <column length="18" name="IDCard"/>
+        </property>
+        <property generated="never" lazy="false" name="poutlook" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="pOutlook"/>
+        </property>
+        <property generated="never" lazy="false" name="province" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="province"/>
+        </property>
+        <property generated="never" lazy="false" name="city" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="city"/>
+        </property>
+        <property generated="never" lazy="false" name="tel" optimistic-lock="true" type="string" unique="false">
+            <column length="11" name="tel"/>
+        </property>
+        <property generated="never" lazy="false" name="address" optimistic-lock="true" type="string" unique="false">
+            <column length="40" name="address"/>
+        </property>
+        <property generated="never" lazy="false" name="ptel" optimistic-lock="true" type="string" unique="false">
+            <column length="11" name="ptel"/>
+        </property>
+        <property generated="never" lazy="false" name="prelation" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="pRelation"/>
+        </property>
+        <property generated="never" lazy="false" name="hostelBuil" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="hostelBuil"/>
+        </property>
+        <property generated="never" lazy="false" name="hostelNo" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="hostelNo"/>
+        </property>
+        <property generated="never" lazy="false" name="baseInfo" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="baseInfo"/>
+        </property>
+        <property generated="never" lazy="false" name="eduBg" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="eduBg"/>
+        </property>
+        <property generated="never" lazy="false" name="remarks" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="remarks"/>
+        </property>
+    </class>
+</hibernate-mapping>

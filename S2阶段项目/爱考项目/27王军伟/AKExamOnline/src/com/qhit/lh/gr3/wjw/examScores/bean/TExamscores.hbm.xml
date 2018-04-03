@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-3-8 12:10:57 by Hibernate Tools 5.2.9.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="db_exam" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.qhit.lh.wjw.bean.TExamscores" optimistic-lock="version" polymorphism="implicit" schema="dbo" select-before-update="false" table="t_examscores">
+        <id name="eid" type="java.lang.Integer">
+            <column name="eid"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="sid" optimistic-lock="true" type="int" unique="false">
+            <column name="sid" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="scores" optimistic-lock="true" type="int" unique="false">
+            <column name="scores" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

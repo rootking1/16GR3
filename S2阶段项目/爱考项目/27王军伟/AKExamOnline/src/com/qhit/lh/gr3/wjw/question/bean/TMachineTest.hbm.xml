@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-3-8 11:27:08 by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true"
+	default-access="property" default-cascade="none" default-lazy="true">
+	<class catalog="db_exam" dynamic-insert="false"
+		dynamic-update="false" mutable="true"
+		name="com.qhit.lh.wjw.bean.TMachineTest" optimistic-lock="version"
+		polymorphism="implicit" schema="dbo" select-before-update="false"
+		table="t_machineTest">
+		<id name="qid" type="java.lang.Integer">
+			<column name="qId" />
+			<generator class="identity" />
+		</id>
+		<property generated="never" lazy="false" name="qtitle"
+			optimistic-lock="true" type="string" unique="false">
+			<column length="100" name="qTitle" not-null="true" />
+		</property>
+		<property generated="never" lazy="false" name="degree"
+			optimistic-lock="true" type="string" unique="false">
+			<column length="4" name="degree" not-null="true" />
+		</property>
+		<many-to-one name="csId" fetch="join" lazy="false"/>
+		<property generated="never" lazy="false" name="csId"
+			optimistic-lock="true" type="int" unique="false">
+			<column name="csId" not-null="true" />
+		</property>
+		<property generated="never" lazy="false" name="chapter"
+			optimistic-lock="true" type="string" unique="false">
+			<column length="2" name="chapter" />
+		</property>
+	</class>
+</hibernate-mapping>
